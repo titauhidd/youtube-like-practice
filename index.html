@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Tube</title>
+    <!-- daisuI & Tailwind Cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/fa47d0810a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="flex items-center justify-between w-[85%] mx-auto pt-4 py-4 border-b-[0.5px] border-cyan-100" >
+        <div class=""">
+        <p class="font-bold text-2xl">My Tube</p>
+        </div>
+        <div class="">
+          <label class="input">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="grow" placeholder="Search"
+          </label>
+        </div>
+        <div class="btn" onclick="">Sort</div>
+      </nav>
+    </header>
+    <main>
+      <section id="categories-btn" class="pt-6 flex gap-8 justify-center"></section>
+      <section id="videos" class="w-[85%] grid grid-cols-1 lg:grid-cols-4 gap-6 mx-auto pt-6"></section>
+    </main>
+    <footer></footer>
+    <script src="./scripts/video.js"></script>
+  </body>
+</html>
